@@ -1,0 +1,206 @@
+
+.app-container {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  width: 100vw; /* Ensure it spans the full width of the viewport */
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  height: 40px;
+}
+
+.explore-button {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.search-input {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 10px 15px;
+  width: 600px;
+  height: 30px;
+}
+
+.header-right button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-left: 15px;
+  font-weight: bold;
+}
+
+.login-button {
+  color: #555;
+}
+
+.signup-button {
+  background-color: #e60023;
+  color: black;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+/* Main content styles */
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+}
+
+p{
+  color: black;
+  margin: 30px;
+  font-weight: bold;
+  font-size: xx-large;
+  margin-left: 100px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns of equal width */
+  gap: 20px; /* Space between the cards */
+  max-width: 900px; /* Adjust width for proper centering */
+  margin: 0 auto; /* Center horizontally */
+  justify-content: center; /* Ensure items are centered */
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; 
+  margin-top: 20px; 
+}
+
+.see {
+  background-color: #e60023;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Card styles */
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  height: 400px;
+  width: 400px;
+}
+
+.card-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.card-title {
+  font-weight: bolder;
+  text-align: center;
+  font-size: x-large;
+}
+
+.card-subtitle {
+  margin-right: auto;
+  font-size: 14px;
+  color: white;
+}
+
+/*BROWSE*/
+
+.browse-category {
+  margin: 40px 0;
+}
+
+.browse-category h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1500px;
+}
+
+.category-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.category-card img {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.category-card span {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+.see {
+  background-color: #e60023;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
